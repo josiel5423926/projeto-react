@@ -50,11 +50,11 @@ export default function produtos(props) {
     //onclick="destaque(this)" onmousemove="exibirborda(this)" onmouseout="retirarborda(this)"
 
     return (
-        <figure className={props.nome + " produto card   col-lg-3 col-md-4 col-sm-6 col-xs-12 mr-auto border-primary "}
-        // onClick={destaque} onMouseOver={exibir_categoria} onMouseOut={destaque}
+        <figure className={props.categoria + " produto card   col-lg-3 col-md-4 col-sm-6 col-xs-12 mr-auto border-primary "}
+        // onClick={destaque} onMouseOver={exibir_categoria} onMouseOut={destaque} <img src={require(./img/${props.imagem}).default}
         >
 
-            <img className="card-img-top img-fluid m-1 " src={require(`./img/Kawasaki_1.jpg`).default} alt="imagem do produto" />
+            <img className="card-img-top img-fluid m-1 " src={require('./' + props.imagem).default} alt="imagem do produto" />
             <figcaption >
                 <hr className="mt-2 mb-1" />
                 <h3 className="h5 text-primary ">{props.descricao}</h3>
