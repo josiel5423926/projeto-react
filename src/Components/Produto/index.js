@@ -69,8 +69,6 @@ export default function produtos(props) {
 
             </figcaption>
 
-
-
         </figure >
 
     );

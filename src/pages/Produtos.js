@@ -9,11 +9,13 @@ export default function Produtos() {
 
     const [produtos, setProdutos] = useState([]);
 
-    useEffect(async () => {
-        //const resposta = await fetch("http://localhost/josiel-projeto-loja/includes/api/produto.php");
-        const resposta = await fetch("http://localhost/fullstackmotos/public/api/produto.php?table=produto");
-        const dados = await resposta.json();
-        setProdutos(dados);
+    useEffect(() => {
+        async function fetchData() {
+            const resposta = await fetch("http://localhost/fullstackmotos/public/api/produto.php?table=produto");
+            const dados = await resposta.json()
+            setProdutos(dados);
+        }
+        fetchData();
     }, []);
 
 
