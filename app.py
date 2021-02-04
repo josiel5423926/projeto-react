@@ -40,4 +40,4 @@ def error_404(error):
     return render_template("error.html")
 
 
-app.run(port=8040, debug=True)
+app.run(port=8050, debug=True)
