@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-
 app.post('/envia-cep', async (req, res) => {
     const { cep } = req.body
     const resultado = await buscaCep(cep)
