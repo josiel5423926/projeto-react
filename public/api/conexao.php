@@ -3,8 +3,8 @@ header("Access-Control-Allow-Origin:*");
 header("Content-type: application/json");
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "josiel";
+$password = "1234";
 $database = "fullstackmotos";
 
 $conexao = mysqli_connect($servername, $username, $password, $database);
