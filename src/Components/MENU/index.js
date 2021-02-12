@@ -6,6 +6,7 @@ import './Menu.css';
 
 function BaseMenu(props) {
     const Location = props
+    
     return (
         <Navbar className="navbar-dark" bg="primary" expand="lg" fixed="top">
             <Navbar.Brand>
@@ -15,7 +16,7 @@ function BaseMenu(props) {
             <Navbar.Collapse id="item-menu">
                 <Nav activeKey={Location.pathname} className="ml-auto mr-3">
                     <Nav.Item>
-                        <Nav.Link as={Link} href="//" to="//">Página Inicial</Nav.Link>
+                        <Nav.Link as={Link} href="/" to="/">Página Inicial</Nav.Link>
                     </Nav.Item>
 
                     <Nav.Item>

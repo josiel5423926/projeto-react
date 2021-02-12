@@ -28,7 +28,7 @@ export default function produtos(props) {
       }
   };
   */
-    /*
+    
  
  
      let destaque = (event) => {
@@ -44,14 +44,14 @@ export default function produtos(props) {
              elemento.parentNode.style.width = "30%";
          }
      };
-     */
+     
 
     // ${props.imagem} https://www.npmjs.com/package/react-number-format
     //onclick="destaque(this)" onmousemove="exibirborda(this)" onmouseout="retirarborda(this)"
 
     return (
         <figure className={props.categoria + " produto card   col-lg-3 col-md-4 col-sm-6 col-xs-12 mr-auto border-primary "}
-        // onClick={destaque} onMouseOver={exibir_categoria} onMouseOut={destaque} <img src={require(./img/${props.imagem}).default}
+        onClick={destaque} //onMouseOver={exibir_categoria} onMouseOut={destaque} <img src={require(./img/${props.imagem}).default}
         >
 
             <img className="card-img-top img-fluid m-1 " src={require('./' + props.imagem).default} alt="imagem do produto" />

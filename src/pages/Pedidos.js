@@ -1,62 +1,46 @@
-import { useState } from 'react';
+//import Erro from '../Components/Erros/Erros';
 import { Form, Button, Row } from 'react-bootstrap';
 
 export default function Pedidos() {
-    const [form, setForm] = useState({
-        nome_cliente: "",
-        endereco: "",
-        telefone: "",
-        descricao: "",
-        preco: "",
-        quantidade: "",
-        valor_total: ""
-    });
-
-    const controleMudanca = (evento) => {
-        console.log(evento.target.value)
-        console.log(form)
-        setForm({
-            ...form,
-            [evento.target.id]: evento.target.value
-        })
-        console.log(form);
-    }
-
+ 
     const controleEnvio = () => { };
     return (
+       
         <Row>
             <div className="col-lg-6 col-md-6 mx-auto">
-                <Form onSubmit={controleEnvio}>
+                <Form onSubmit={controleEnvio} method="POST" action="http://localhost/projeto-react/public/api/pedidos.php" >
                     <h4>Fazer Pedidos</h4>
                     <Form.Group>
                         <Form.Label>Nome:</Form.Label>
-                        <Form.Control onChange={controleMudanca} type="text" id="nome_cliente" />
+                        <Form.Control /* onChange={controleMudanca}  */type="text" name="nome_cliente" />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Endereço:</Form.Label>
-                        <Form.Control onChange={controleMudanca} type="text" id="endereco" />
+                        <Form.Control /* onChange={controleMudanca}  */type="text" name="endereco" />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Telefone:</Form.Label>
-                        <Form.Control onChange={controleMudanca} type="text" id="telefone" />
+                        <Form.Control /* onChange={controleMudanca}  */type="text" name="telefone" />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Produto:</Form.Label>
-                        <Form.Control onChange={controleMudanca} type="text" id="descricao" />
+                        <Form.Control /* onChange={controleMudanca}  */type="text" name="nome_produto" />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Valor Unitário:</Form.Label>
-                        <Form.Control onChange={controleMudanca} type="text" id="preco" />
+                        <Form.Control /* onChange={controleMudanca}  */type="text" name="valor_unitario" />
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Quantidade:</Form.Label>
-                        <Form.Control onChange={controleMudanca} type="text" id="quantidade" />
+                        <Form.Control /* onChange={controleMudanca}  */type="text" name="quantidade" />
                     </Form.Group>
-                    <Form.Group>
+
+
+                   { <Form.Group>
                         <Form.Label>Preço Final:</Form.Label>
-                        <Form.Control disabled type="text" id="valor_total" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
+                        <Form.Control disabled type="text" name="valor_total" />
+                    </Form.Group> }
+                    <Button variant="primary"  type="submit">
                         Cadastrar
                     </Button>
                 </Form>

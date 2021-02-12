@@ -11,7 +11,7 @@ export default function Produtos() {
 
     useEffect(() => {
         async function fetchData() {
-            const resposta = await fetch("http://localhost/projeto-react.js/public/api/produto.php");
+            const resposta = await fetch("http://localhost/projeto-react/public/api/produto.php");
             const dados = await resposta.json()
             setProdutos(dados);
         }
