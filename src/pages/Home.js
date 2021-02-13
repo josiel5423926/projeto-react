@@ -1,6 +1,21 @@
+import { Container, Col} from 'react-bootstrap';
 export default function Home() {
     return (
-        <h1>Olá Mundo</h1>
+        <Container className="text-center bg-light" fluid>
+
+            <div className="py-4">
+                <h1 className="py-4">Seja Bem-vindo</h1>
+            </div>
+            
+             <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
+                            <a href="/">
+                                <img src="./logo.png" width="150px" alt="&copy; Full Stack Motos" title="&copy; Full Stack Motos" className="shadow-sm bg-white rounded" />
+                            </a>
+             </Col>
+
+            
+
+        </Container>
     )
 
 
