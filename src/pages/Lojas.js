@@ -4,8 +4,8 @@ import { Table} from "react-bootstrap";
 
 export default function Lojas() {
     return (
-        <Table striped bordered hover size="sm">
-        <thead>
+        <Table striped bordered hover size="lg ">
+        <thead >
           <tr>
           
             <th>São Paulo</th>
@@ -36,7 +36,5 @@ export default function Lojas() {
       </Table>
         
     )
-
-
 
 }

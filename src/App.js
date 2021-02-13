@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Rotas from './rotas';
 import './App.css';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
             <Rotas />
           </Container>
         </main>
+        <footer>
+          <Footer/>
+        </footer>
       </div>
 
     </BrowserRouter>
