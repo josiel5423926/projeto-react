@@ -1,23 +1,25 @@
-import { Container, Col} from 'react-bootstrap';
-import Logo from './logo.png';
+//import { Container, Col} from 'react-bootstrap';
+//import Logo from '../pages/logo.png';
+
+import { lazy,Suspense} from 'react';
+
+
+const Home2 = lazy(() => import('../Components/Home2/Home2.js'));
+const Home3 = lazy(() => import('../Components/Home2/Home3.js'));
 
 export default function Home() {
     return (
-        <Container className="text-center bg-light" fluid>
+        <>
+        <Suspense fallback={<h1 className="texter-center">Carregando...</h1>}> 
+          <Home2 />
+        </Suspense>
 
-            <div className="py-4">
-                <h1 className="py-4">Seja Bem-vindo</h1>
-            </div>
-            
-             <Col className="mx-auto my-5" sm={12} md={6} lg={6}>
-                            <a href="/">
-                                <img src={Logo} width="300px" alt="&copy; Full Stack Motos" title="&copy; Full Stack Motos" className="shadow-sm bg-white rounded" />
-                            </a>
-             </Col>
 
-            
-
-        </Container>
+        <Suspense fallback={<h1 className="texter-center">Carregando...</h1>}> 
+          <Home3 />
+        </Suspense>
+       </>
+       
     )
 
 

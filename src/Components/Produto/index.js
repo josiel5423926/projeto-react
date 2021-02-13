@@ -1,35 +1,8 @@
 import './produto.css';
 
 export default function produtos(props) {
-    /**
-   function show_info(event) {
-       const target = event.currentTargent;
-       const elemento = target.getElementsByTagName("figcaption")[0];
-       elemento.style.visibility = "initial";
-   };
-    function hide_info(event) {
-       const target = event.currentTargent;
-       const elemento = target.getElementsByTagName("figcaption")[0];
-       elemento.style.visibility = "hidden";
-   };
-  
-  function exibir_categoria(event) {
-
-      let elementos = document.getElementsByClassName('figure');
-
-      for (var i = 0; i < elementos.length; i++) {
-
-          if (event === elementos[i].id) {
-              elementos[i].style = "display:block";
-          }
-          else {
-              elementos[i].style = "display:none";
-          }
-      }
-  };
-  */
+   
     
- 
  
      let destaque = (event) => {
          const target = event.currentTargent;
@@ -46,9 +19,6 @@ export default function produtos(props) {
      };
      
 
-    // ${props.imagem} https://www.npmjs.com/package/react-number-format
-    //onclick="destaque(this)" onmousemove="exibirborda(this)" onmouseout="retirarborda(this)"
-
     return (
         <figure className={props.categoria + " produto card   col-lg-3 col-md-4 col-sm-6 col-xs-12 mr-auto border-primary "}
         onClick={destaque} //onMouseOver={exibir_categoria} onMouseOut={destaque} <img src={require(./img/${props.imagem}).default}
@@ -64,7 +34,7 @@ export default function produtos(props) {
                 <div className="h5 slab text-danger">R$ {props.preco_final} </div>
 
                 <div className="d-flex justify-content-center">
-                    <a href="pedidos.php" className="btn btn-primary">Comprar</a>
+                    <a href="/Pedidos" className="btn btn-primary">Comprar</a>
                 </div>
 
             </figcaption>

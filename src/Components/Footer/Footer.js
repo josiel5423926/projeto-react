@@ -46,16 +46,6 @@ export default function Footer() {
                             </ul>
                         </Col>
 
-                        <Col className="m-auto" sm={12} md={3} lg={3}>
-                            <div>
-                                <a href="https://github.com/josielsouza/projeto-react.js/tree/react-front-avancado" target="_blank" rel="noopener noreferrer" title="GitHub" className="github"><i
-                                    className="fa fa-3x mx-2 fa-github text-light"></i></a>
-                                <a href="https://www.linkedin.com/in/josiel-souza/" target="_blank" rel="noopener noreferrer" title="Linkedin" className="linkedin"><i
-                                    className="fa fa-3x mx-2 fa-linkedin text-light"></i></a>
-                                
-                            </div>
-                        </Col> 
-
                     </Row>
                 </Container>
             </footer>

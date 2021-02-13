@@ -1,7 +1,10 @@
-A atividade individual de front-end intermediário (cavaleiro jedi) será única, ela irá contemplar os conteúdos dos cursos de React.Js, Bootstrap, PHP e Banco de Dados.
+Olá!
+ # Nesta  missão foi feita a substituição do import na página Home, contato e pedidos e o lazy loading
 
-Você já pode ir desenvolvendo a parte relacionada ao React.Js, de acordo com as orientações abaixo. Mas lembre-se! O link para envio da atividade completa só estará disponível ao final de Banco de dados Intermediário, com prazo até o dia 4/12.
+Realizar o refactory (reconstrução) do projeto substituindo o import comum de pelo menos 3 (três) componentes por implementação de Code Splitting e Lazy Loading.
+Passo a passo para apresentação da entrega:
 
- 
-
-Em relação a parte de React.Js a solicitação é que você realize um refactory (refatoração) do front-end do seu projeto. Ou seja, é preciso realizar a reconstrução da interface do seu projeto utilizando o React. Js.
+Acesse sua conta no GitHub.
+Publique o projeto no GitHub.
+Compartilhe o link do GitHub no AVA Recode Pro.
+Agora é só aguardar o feedback do seu monitor!

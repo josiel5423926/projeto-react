@@ -3,7 +3,7 @@ require ( "./conexao.php");
 
 if (
     isset($_POST['nome_cliente']) && isset($_POST['endereco']) && isset($_POST['telefone']) &&
-     isset($_POST['valor_unitario']) && isset($_POST['quantidade']) //&&
+     isset($_POST['valor_unitario']) && isset($_POST['quantidade']) 
  
 ) {
     $nome_cliente = $_POST['nome_cliente'];
