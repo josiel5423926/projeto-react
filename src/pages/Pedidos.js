@@ -36,13 +36,17 @@ export default function Pedidos() {
                     </Form.Group>
 
 
-                   { <Form.Group>
+                   <Form.Group>
                         <Form.Label>Preço Final:</Form.Label>
                         <Form.Control disabled type="text" name="valor_total" />
-                    </Form.Group> }
-                    <Button variant="primary"  type="submit">
-                        Cadastrar
-                    </Button>
+                    </Form.Group>
+                    
+                    <div className="text-center">
+                        <Button variant="primary" type="submit">
+                            Cadastrar
+                        </Button>
+                    </div>
+
                 </Form>
             </div>
 
